@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFELSE_DEMO</title>
+</head>
+<body>
+
+  <h1>welcome to mr./ms. {{name}}</h1>
+    {% if LOGIN %}
+    
+      <ol>
+          <li>HOME</li>
+          <li>PROFILE</li>
+          <li>CART</li>
+          <li>LOGOUT</li>
+      </ol>
+    {% else %}
+      <ol>
+          <li>REGISTER</li>
+          <li>LOGIN</li>
+      </ol>
+    {% endif %}
+ 
+<h2>greatest of two numbers is</h2>
+{% if a > b %}
+  <h4>a is greatest</h4>
+{% else %}
+  <h4>b is greatest</h4>
+{% endif %}
+
+
+
+
+</body>
+</html>

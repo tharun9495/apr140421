@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR_DEMO</title>
+</head>
+<body>
+    {% if items %}
+      <h1>ITEMS ARE :</h1>
+      <ol>
+          {% for items in items  %}
+          <li>{{items}}</li>
+          {% endfor %}
+      </ol>
+    {% else %}
+      <ol>
+          <li>
+              <h1>No items</h1>
+          </li>
+      </ol>
+    {% endif %}
+
+    {% for key in profile %}
+      <h4>{{key}}</h4>
+    {% endfor %}
+    
+    {% for values in profile.values %}
+      <h4>{{values}}</h4>
+    {% endfor %}
+    
+
+    
+    {% for key,values in profile.items %}
+      <h4>{{key}}:{{values}}</h4>
+    {% endfor %}
+
+
+</body>
+</html>
